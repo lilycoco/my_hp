@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "node server.js",
     "build": "next build",
-    "start": "next start"
+    "now-build": "next build",
+    "start": "next start -p %PORT%"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +18,7 @@
     "express": "^4.17.1",
     "isomorphic-unfetch": "^3.0.0",
     "next": "^8.1.0",
+    "now": "^15.6.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-markdown": "^4.0.9",
@@ -28,6 +30,6 @@
     "webpack": "^4.28.4"
   },
   "plugins": [
-      "styled-jsx/babel"
-    ]
+    "styled-jsx/babel"
+  ]
 }
